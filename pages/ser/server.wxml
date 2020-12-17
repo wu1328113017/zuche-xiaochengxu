@@ -1,0 +1,51 @@
+<!--pages/ser/server.wxml-->
+<view>
+  <!--头部 开始-->
+  <view class="header">
+    <text class="iconfont icon-huaban"></text>
+    <input type="text" placeholder="请输入关键字搜索" placeholder-class="placeholder"/>
+  </view>
+  <!--头部 结束-->
+  <!--身体 开始-->
+  <view class="body">
+  <!--排序筛选 开始-->
+  <!--排查车型 开始-->
+  <view class="{{pic_class}}">
+  <picker class="car_model" mode="selector" range="{{car_model.value}}" bindchange="c_change">
+    <view class="picker">
+      <text>
+      {{car_model.default}}
+      </text>
+    </view>
+  </picker>
+  <!--排查车型 结束-->
+  <!--价格排序 开始-->
+  <picker class="price_ranking" mode="selector" range="{{price_ranking.value}}" bindchange="p_change">
+    <view class="picker">
+      <text>
+      {{price_ranking.default}}
+      </text>
+    </view>
+  </picker>
+  <!--价格排序 结束-->
+  </view>
+  <!--排序筛选 结束-->
+  <!--商品数据 开始-->
+  <view class="goods">
+      <block wx:for="{{goods}}" wx:key="goods">
+        <navigator class="good {{good_class}}" url="{{url}}">
+          <image src="{{item.image_url}}"></image>
+          <view>
+            <text class="name {{name_class}}">{{item.name}}</text>
+            <block  wx:if="{{item.attribute != '' && item.attribute != null && item.attribute.length != 0}}">
+            <text class="attribute">{{item.attribute}}</text>
+            </block>
+            <text class="price {{price_class}}">￥{{item.price}}/{{item.company}}</text>
+          </view>
+        </navigator>
+      </block>
+    </view>
+    <!--商品数据 结束-->
+  </view>
+  <!--身体 结束-->
+</view>

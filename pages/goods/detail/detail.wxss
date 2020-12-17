@@ -1,0 +1,142 @@
+/* pages/goods/detail.wxss */
+page{
+  padding: 0;
+}
+view{
+  box-sizing: border-box;
+}
+/**头部部分**/
+.header image{
+  width: 100%;
+  height: 380rpx;
+}
+/**身体部分**/
+.body .detail{
+  border-bottom: 1px solid #f5f5f5;
+}
+.body .detail text{
+  display: block;
+  margin: 20rpx;
+}
+.body .detail .price{
+  color: red;
+  font-size: 28rpx;
+}
+.body .detail .name{
+  font-size: 30rpx;
+}
+.body .detail .alert{
+  font-size: 20rpx;
+}
+.body .attribute{
+  padding-top:20rpx
+}
+.body .attribute>text{
+  font-size: 24rpx;
+  margin-left:20rpx;
+}
+.body .attribute>view{
+  font-size: 18rpx;
+  margin:0 auto;
+  width: 90%;
+  box-shadow: 1rpx 1rpx 1rpx 1rpx rgba(0,0,0,0.1);
+  height: 120rpx;
+  margin-top: 10rpx;
+}
+.body .attribute>view>view{
+  display: inline-block;
+  height: 100%;
+  text-align: center;
+  width: 23%;
+}
+.body .attribute>view>view>text{
+  display: block;
+  height: 50%;
+  line-height: 60rpx;
+}
+.body .tp{
+  padding-top: 40rpx;
+}
+.body .tp>text{
+  font-size: 24rpx;
+  margin-left: 20rpx;
+}
+.body .tp>view{
+  margin:0 auto;
+  width: 90%;
+  display: flex;
+  height: 100rpx;
+  margin-top: 30rpx;
+}
+.body .tp>view>view{
+  text-align: center;
+  display: inline-block;
+  flex: 1;
+  font-size: 20rpx;
+}
+.body .tp>view>view>text{
+  display: block;
+  height: 20%;
+  color: #666666;
+}
+.body .tp>view>view>.iconfont{
+  height: 80%;
+  font-size: 70rpx;
+  color: #6709e2c2;
+}
+.body .mna,.body .condition,.body .explain{
+  padding-top: 40rpx;
+}
+.body .mna text,.body .condition text,.body .explain text{
+  margin-left: 20rpx;
+  display: block;
+  font-size: 24rpx;
+}
+.body .mna text:nth-child(1){
+  font-size: 24rpx;
+}
+.body .mna text:nth-child(2){
+  font-size: 26rpx;
+  color: red;
+  margin: 20rpx;
+}
+.body .condition,.body .explain{
+  padding-top: 20rpx;
+}
+.foot{
+  position: relative;
+  margin-top: 40rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  height: 100rpx;
+}
+.foot>view{
+  display: inline-block;
+  width: 20%;
+  height: 70rpx;
+  position: absolute;
+}
+.foot>view>text{
+  display: block;
+  font-size: 24rpx;
+  text-align: center;
+  line-height: 35rpx;
+}
+.foot>view>.iconfont{
+  font-size: 30rpx;
+}
+.foot navigator{
+  height: 70rpx;
+  line-height: 70rpx;
+  width: 70%;
+  margin: 0;
+  margin-left: 20%;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 26rpx;
+  position: absolute;
+  color:#ffffff;
+  border-radius: 50rpx;
+  background:  #6709e2c2;
+  text-align: center;
+}

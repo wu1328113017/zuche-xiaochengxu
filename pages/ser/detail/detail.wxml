@@ -1,0 +1,111 @@
+<!--pages/ser/detail/detail.wxml-->
+<view>
+  <!--头部 开始-->
+  <view class="header">
+  </view>
+  <!--头部 结束-->
+  <!--身体 开始-->
+  <view class="body">
+    <view>
+      <!--导航栏 开始-->
+      <view class="nav">
+        <view data-name="jj_active" class="{{nav_tabs.jj_active}}" bindtap="nav_click">
+          <text>接机服务</text>
+          <text></text>
+        </view>
+        <view data-name="sj_active" class="{{nav_tabs.sj_active}}" bindtap="nav_click">
+          <text>送机服务</text>
+          <text></text>
+        </view>
+      </view>
+      <!--导航栏 结束-->
+      <view class="bgw">
+      <!--填写信息模块 开始-->
+      <!--接机服务 开始-->
+      <view class="content {{nav_tabs.jj_active}}">
+        <view>
+        <view>接机时间</view>
+        <!--时间选择器 开始-->
+        <view>
+          <text>请选择接机时间</text>
+          <text>></text>
+        </view>
+        <!--时间选择器 结束-->
+        </view>
+        <view>
+          <view>接机航班</view>
+          <view>
+            <input type="text" placeholder="请输入接机航班号"/>
+          </view>
+        </view>
+        <view>
+          <view>接机机场</view>
+          <view>
+            <text>请选择接机机场</text>
+            <text>v</text>
+          </view>
+        </view>
+        <view>
+          <view>送达地址</view>
+          <view>
+            <text>请选择送达地址</text>
+            <text>></text>
+          </view>
+
+        </view>
+      </view>
+      <!--接机服务 结束-->
+      <!--送机服务 开始-->
+      <view class="content {{nav_tabs.sj_active}}">
+        <view>
+        <view>送机时间</view>
+        <!--时间选择器 开始-->
+        <view>
+          <text>请选择送机时间</text>
+          <text>></text>
+        </view>
+        <!--时间选择器 结束-->
+        </view>
+        <view>
+          <view>出发地址</view>
+          <view>
+            <text>请选择出发地址</text>
+            <text>v</text>
+          </view>
+        </view>
+        <view>
+          <view>到达机场</view>
+          <view>
+            <text>请选择到达机场</text>
+            <text>></text>
+          </view>
+        </view>
+        <view class="alert">*建议您提前2小时到达机场，避免误机</view>
+      </view>
+      <!--送机服务 结束-->
+      <!--填写信息模块 结束-->
+      <!--商品数据 开始-->
+      <view class="foot">
+        <image src="https://i03piccdn.sogoucdn.com/132925a810740438"></image>
+        <view><text class="name">奔驰凌特</text></view>
+        <view><text class="attribute">黑色/17/座/3.07</text></view>
+        <view class="price">
+          <text><text>虹桥</text><text class="cred">￥799.0/次</text></text>
+          <text><text>浦东</text><text class="cred">￥999.0/次</text></text>
+        </view>
+        <view><navigator class="cred">服务介绍</navigator></view>
+      </view>
+      <!--商品数据结束-->
+      </view>
+    </view>
+    <!--body-foot 开始-->
+    <view class="foot">
+      <navigator class="confrim {{nav_tabs.jj_active}}">确认接机信息</navigator>
+      <navigator class="confrim {{nav_tabs.sj_active}}">确认送机信息</navigator>
+      <navigator>联系客服</navigator>
+      <navigator>联系微信客服</navigator>
+    </view>
+    <!--body-foot 结束-->
+  </view>
+  <!--身体 结束-->
+</view>

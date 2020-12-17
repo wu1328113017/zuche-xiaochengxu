@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/ser/server",
+    "pages/logs/logs",
+    "pages/goods/detail/detail",
+    "pages/ser/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#eeeeee"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

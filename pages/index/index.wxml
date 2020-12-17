@@ -1,0 +1,64 @@
+<!--index.wxml-->
+<view>
+  <view class="header">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+    <view>服务车辆已消毒</view>
+  </view>
+  <view class="body">
+    <!-- 轮播图 开始-->
+    <view class="swiper">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
+        circula="{{circula}}" indicator-active-color="#87c1f1">
+        <block wx:for="{{images}}" wx:key="*this">
+          <swiper-item>
+            <image src="{{item}}" />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <!--轮播图 结束-->
+    <!--分类服务导航 开始-->
+    <view class="category_service_nav">
+      <navigator class="service1 service" url="../ser/server?type=pickUpService">
+        <text class="title">接送机服务</text>
+        <text>十分专业，百分安全</text>
+      </navigator>
+      <navigator class="service2 service" url="../ser/server?type=service2">
+        <text class="title">车+司机服务</text>
+        <text>十分专业，百分安全</text>
+      </navigator>
+      <navigator class="service3 service" url="../ser/server?type=service3">
+        <text class="title">自驾服务</text>
+        <text>需完善驾驶证信息</text>
+      </navigator>
+      <navigator class="service4 service" url="../ser/server?type=service4">
+        <text class="title">豪车分时租</text>
+        <text>豪车分时租</text>
+      </navigator>
+    </view>
+    <!--分类服务导航 结束-->
+    <!--导航栏 开始-->
+    <view class="nav_tabs">
+      <block wx:for="{{nav_tabs}}" wx:key="nav_tabs">
+        <view id="{{item.id}}" class="nav_tab {{item.active}}" bindtap="tab_active">
+        <text class="iconfont {{item.icon}}"></text>
+        <text>{{item.text}}</text>
+        </view>
+      </block>
+    </view>
+    <!--导航栏 结束-->
+    <!--商品数据 开始-->
+    <view class="goods">
+      <block wx:for="{{goods}}" wx:key="goods">
+        <navigator class="good"  url="../goods/detail/detail">
+          <image src="{{item.image_url}}"></image>
+          <view>
+            <text class="name">{{item.name}}</text>
+            <text class="price">￥{{item.price}}/{{item.company}}</text>
+          </view>
+        </navigator>
+      </block>
+    </view>
+    <!--商品数据 结束-->
+  </view>
+</view>

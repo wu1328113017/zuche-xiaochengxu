@@ -1,0 +1,82 @@
+<!--pages/goods/detail.wxml-->
+<view>
+  <!--头部 开始-->
+  <view class="header">
+    <image src="https://i03piccdn.sogoucdn.com/132925a810740438"></image>
+  </view>
+  <!--头部 结束-->
+  <!--身体 开始-->
+  <view class="body">
+    <view class="detail">
+      <text class="price">￥999.00/小时</text>
+      <text class="name">劳斯莱斯系列 ￥999</text>
+      <text class="alert">车辆已消毒</text>
+    </view>
+    <view class="attribute">
+      <text>车辆配置</text>
+      <view>
+        <view>
+          <text class="iconfont icon-wenhao"></text>
+          <text>车型随机</text>
+        </view>
+        <view>
+          <text class="iconfont icon-wenhao1"></text>
+          <text>颜色随机</text>
+        </view>
+      </view>
+    </view>
+    <view class="tp">
+      <text>租车流程</text>
+      <view>
+        <view>
+        <text class="iconfont icon-liucheng"></text>
+        <text>支付定金</text>
+        </view>
+        <view>
+        <text class="iconfont icon-liucheng"></text>
+        <text>上门取车</text>
+        </view>
+        <view>
+        <text class="iconfont icon-liucheng"></text>
+        <text>缴纳押金和尾款</text>
+        </view>
+        <view>
+        <text class="iconfont icon-liucheng"></text>
+        <text>开始用车</text>
+        </view>
+      </view>
+    </view>
+    <view class="mna">
+      <text>注意事项</text>
+      <text>车型随机，不指定车型。如需指定车型，到自驾业务里面下单，1天起租。</text>
+    </view>
+    <view class="condition">
+      <text>租车需具备的条件</text>
+      <view>
+        <text>1）年龄在18周岁（含）至60周岁之间</text>
+        <text>2）拥有中国大陆地区有效行驶证</text>
+        <text>3）提供本人有效身份证明</text>
+      </view>
+    </view>
+    <view class="explain">
+      <text>价格说明</text>
+      <view>
+        <text>1）预定时按照使用日期选择产品时，先支付相应产品的定金，并在取车时付全款</text>
+        <text>2）车辆租费及车辆押金、违章保证金为租车必付费用</text>
+        <text>3）租车期间的燃油费用由客户自行承担</text>
+      </view>
+    </view>
+  </view>
+  <!--身体 结束-->
+  <!--脚部 开始-->
+  <view class="foot">
+    <view>
+      <text class="iconfont icon-kefu"></text>
+      <text>客服</text>
+    </view>
+      <navigator url="../index/index">
+      立即预定
+      </navigator>
+  </view>
+  <!--脚部 结束-->
+</view>
