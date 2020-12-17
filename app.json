@@ -4,7 +4,8 @@
     "pages/ser/server",
     "pages/logs/logs",
     "pages/goods/detail/detail",
-    "pages/ser/detail/detail"
+    "pages/ser/detail/detail",
+    "pages/order/order"
   ],
   "window": {
     "backgroundTextStyle": "light",

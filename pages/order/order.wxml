@@ -1,0 +1,58 @@
+<!--pages/order/order.wxml-->
+<view>
+  <!--头部 开始-->
+  <!--车辆信息 开始-->
+  <view class="header">
+    <view class="content">
+      <image src="https://i03piccdn.sogoucdn.com/132925a810740438"></image>
+      <view class="data">
+        <text class="name">劳斯莱斯系列 ￥999</text>
+        <text class="alert">车辆已消毒</text>
+        <text class="type">类型：商务车</text>
+      </view>
+    </view>
+    <view class="address">
+      <text>取车地点：<text>上海市虹口区玫瑰广场（洪江支路180弄1-4号）</text></text>
+    </view>
+  </view>
+  <!--车辆信息 结束-->
+  <!--头部 结束-->
+  <!--身体 开始-->
+  <view class="body">
+    <!--填写订单信息 开始-->
+    <view class="info">
+      <view><text>车辆租金（元/小时）</text><text>￥999.00</text></view>
+      <view><text><text class="cred">*</text>开始租用日期</text><text>请选择租用日期</text></view>
+      <view><text><text class="cred">*</text>租用时长</text><text>请选择租用时长(小时)</text></view>
+      <view><text>平台保障费用</text><text>￥0.00</text></view>
+      <view><text>服务费用</text><text>￥0.00</text></view>
+      <view><text>租用费用</text><text>￥0.00</text></view>
+      <view><text>车辆定金</text><text>￥500.00</text></view>
+      <view><text>费用合计</text><text class="cred">￥500.00</text></view>
+    </view>
+    <!--填写订单信息 结束-->
+    <!--其他 开始-->
+    <view class="other">
+    <view>
+      <view>付款须知</view>
+      <view>线上支付定金，线下支付尾款</view>
+    </view>
+    <view>
+      <view>车辆押金</view>
+      <view>租用该车辆需缴纳车辆押金及违章保证金</view>
+    </view>
+    </view>
+    <!--其他 结束-->
+  </view>
+  <!--身体 结束-->
+  <view class="foot">
+    <checkbox-group bindchange="checkboxChange">
+    <label class="checkbox">
+      <checkbox value="active" color="blue"/>      
+      我已阅读、理解并同意遵守
+      <navigator>《xxx协议》</navigator>
+    </label>
+  </checkbox-group>
+    <navigator class="{{n_active}}">支付定金</navigator>
+  </view>
+</view>

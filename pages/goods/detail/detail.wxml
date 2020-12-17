@@ -74,7 +74,7 @@
       <text class="iconfont icon-kefu"></text>
       <text>客服</text>
     </view>
-      <navigator url="../index/index">
+      <navigator url="../../order/order">
       立即预定
       </navigator>
   </view>
